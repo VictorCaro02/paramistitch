@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Stitch ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('./VyC.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Estilo del contenedor */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: fade-in 2s ease-in-out forwards; /* Aplicar la animación */
+        }
+
+        /* Definición de la animación */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Un pequeño desplazamiento */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #c0392b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: auto;
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mensaje de un loco enamorado</h1>
+        
+        <p>
+            Tengo tantísimas cosas que decirte que no sabría por dónde empezar. Por eso, tienes tres imágenes relacionadas con nosotros debajo. Cada una de ellas
+            tiene algo que decirte. Haz click encima de ellas para descubrir los mensajes secretos para tí
+        </p>
+        
+        <div class="gallery">
+            <a href="./poema1.html">
+                <img class="foto1" src="./fueguitos.jpg" alt="Nuestros fuegos artificiales">
+            </a>
+            <a href="./poema2.html">
+                <img class="foto2" src="./nosotros.jpg" alt="Nuestro arco de amor">
+            </a>
+            <a href="./poema3.html">
+                <img src="./coche.jpg" alt="Viaje al horizonte">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
